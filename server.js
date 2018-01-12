@@ -47,7 +47,7 @@ res.send({
     ]
 });*/
 res.render('home.hbs',{
-    pageTitle : 'Home',
+    pageTitle : 'First Home',
     welcomeMessage:'Welcome to my website'
 
 })
