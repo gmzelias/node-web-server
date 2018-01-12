@@ -46,12 +46,13 @@ res.send({
        'Baseball' 
     ]
 });*/
-res.render('home.hbs',{
-    pageTitle : 'About Page',
-    welcomeMessage:'Welcome to my website'
 
-})
-});
+app.get('/home',(req,res)=>{
+    res.render('home.hbs',{
+        pageTitle : 'Home Page',
+        welcomeMessage:'Welcome to my website'
+    });
+    });
 
 app.get('/about',(req,res)=>{
 res.render('about.hbs',{
